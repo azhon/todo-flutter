@@ -1,7 +1,12 @@
 ### 效果图
-<img src="https://github.com/azhon/todo-flutter/blob/sample/img/img1.png" width="300"> <img src="https://github.com/azhon/todo-flutter/blob/sample/img/img2.png" width="300"> <img src="https://github.com/azhon/todo-flutter/blob/sample/img/img3.png" width="300">
-<img src="https://github.com/azhon/todo-flutter/blob/sample/img/img4.png" width="300"> <img src="https://github.com/azhon/todo-flutter/blob/sample/img/img5.png" width="300">
+<img src="https://github.com/azhon/todo-flutter/blob/sample/img/img1.png" width="300"> <img src="https://github.com/azhon/todo-flutter/blob/sample/img/img2.png" width="300">
+<img src="https://github.com/azhon/todo-flutter/blob/sample/img/img3.png" width="300"> <img src="https://github.com/azhon/todo-flutter/blob/sample/img/img4.png" width="300">
 ### 目录结构
+- common/api/：网络请求
+- common/route/：页面路由
+- domain/domain/：Bloc相关
+- main.dart：todo-flutter项目初始化
+- view/：使用示例
 ```
 ./lib
 ├── common
