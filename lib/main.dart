@@ -56,6 +56,7 @@ class _MyHomePageState extends BaseState<MyHomePage> {
     ['文本示例', ModuleRouteName.TextPage],
     ['按钮示例', ModuleRouteName.ButtonPage],
     ['图片示例', ModuleRouteName.ImagePage],
+    ['Toast示例', ModuleRouteName.ToastPage],
     ['输入框示例', ModuleRouteName.InputPage],
     ['Bloc示例', ModuleRouteName.BlocPage],
     ['网络示例', ModuleRouteName.NetPage],
