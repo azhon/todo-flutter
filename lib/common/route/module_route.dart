@@ -15,6 +15,7 @@ import 'package:todo_flutter/view/image_page.dart';
 import 'package:todo_flutter/view/input_page.dart';
 import 'package:todo_flutter/view/net_page.dart';
 import 'package:todo_flutter/view/text_page.dart';
+import 'package:todo_flutter/view/toast_page.dart';
 
 class ModuleRoute {
   ///添加模块路由
@@ -30,6 +31,10 @@ class ModuleRoute {
     RouterUtil.instance.addRoute(ModuleRouteName.ImagePage,
         (Map<String, dynamic> map, dynamic obj) {
       return ImagePage();
+    });
+    RouterUtil.instance.addRoute(ModuleRouteName.ToastPage,
+        (Map<String, dynamic> map, dynamic obj) {
+      return ToastPage();
     });
     RouterUtil.instance.addRoute(ModuleRouteName.InputPage,
         (Map<String, dynamic> map, dynamic obj) {

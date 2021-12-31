@@ -6,4 +6,5 @@
  static const InputPage = "/InputPage";
  static const NetPage = "/NetPage";
  static const TextPage = "/TextPage";
+ static const ToastPage = "/ToastPage";
 }
