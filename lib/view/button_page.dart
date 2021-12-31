@@ -84,6 +84,14 @@ class _ButtonPageState extends BaseState<ButtonPage> {
                 margin: only(top: 20),
               ),
               CommonButton(
+                '渐变色按钮',
+                color: Colors.transparent,
+                gradient: LinearGradient(
+                  colors: [Colors.blue, Colors.blueGrey],
+                ),
+                margin: only(top: 20),
+              ),
+              CommonButton(
                 '镂空不可点击按钮',
                 disable: true,
                 color: Colors.transparent,
