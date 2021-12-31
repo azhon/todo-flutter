@@ -19,7 +19,7 @@ class _ToastPageState extends BaseState<ToastPage> {
             '弹出Toast',
             color: Colors.blue,
             radius: 20,
-            margin: only(left: 20, right: 20, top: 20),
+            margin: only(left: 20, right: 20, top: 40),
             onPressed: () {
               showToast('我是Toast');
             },
@@ -31,7 +31,7 @@ class _ToastPageState extends BaseState<ToastPage> {
             margin: only(left: 20, right: 20, top: 20),
             onPressed: () {
               showToast(
-                '我是Toast',
+                '底部Toast',
                 data: ToastThemeData(gravity: ToastGravity.BOTTOM),
               );
             },
