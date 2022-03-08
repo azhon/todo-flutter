@@ -59,7 +59,9 @@ class TestInterceptor extends InterceptorsWrapper {
   }
 }
 
-abstract class ApiRequest<T extends BaseResultBean> extends BaseRequest<T> {
+abstract class ApiRequest<T> extends BaseRequest<T> {
+  ApiRequest(Map<String, dynamic>? params) : super(params);
+
   @override
   BaseNetProvider getNetProvider() {
     return ApiProvider.instance;

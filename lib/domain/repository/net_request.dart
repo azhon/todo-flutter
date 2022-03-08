@@ -14,6 +14,8 @@ import 'package:todo_flutter/common/api/api_provider.dart';
 import 'package:todo_flutter/domain/bean/get_bean.dart';
 
 class NetGetRequest extends ApiRequest<GetBean> {
+  NetGetRequest() : super({'id': '323', 'name': 'azhon'});
+
   @override
   RequestMethod get method => RequestMethod.GET;
 
@@ -21,21 +23,17 @@ class NetGetRequest extends ApiRequest<GetBean> {
   String get url => 'banner/json';
 
   @override
-  Map<String, dynamic>? get params => {'id': '323', 'name': 'azhon'};
-
-  @override
   BaseResultBean get resultInstance => GetBean();
 }
 
 class NetPostRequest extends ApiRequest {
+  NetPostRequest() : super({'id': '323', 'name': 'azhon'});
+
   @override
   RequestMethod get method => RequestMethod.POST;
 
   @override
   String get url => 'lg/uncollect_originId/2333/json';
-
-  @override
-  Map<String, dynamic>? get params => {'id': '323', 'name': 'azhon'};
 
   @override
   BaseResultBean? get resultInstance => null;

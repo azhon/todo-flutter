@@ -11,12 +11,10 @@ class GetBean extends BaseResultBean {
 
   @override
   fromJson(json) {
-    if (json['data'] != null) {
-      data = [];
-      json['data'].forEach((v) {
-        data?.add(Data.fromJson(v));
-      });
-    }
+    data = [];
+    json.forEach((v) {
+      data?.add(Data.fromJson(v));
+    });
   }
 
   Map<String, dynamic> toJson() {

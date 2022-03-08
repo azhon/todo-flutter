@@ -29,20 +29,20 @@ class _ImagePageState extends BaseState<ImagePage> {
       appBar: AppBar(title: Text('图片示例')),
       body: SingleChildScrollView(
         child: Padding(
-          padding: all(32),
+          padding: all(16),
           child: Wrap(
             direction: Axis.horizontal,
-            runSpacing: setWidth(20),
-            spacing: setWidth(20),
+            runSpacing: setWidth(10),
+            spacing: setWidth(10),
             children: [
               CommonImage(
                 network: imgUrl,
-                width: 160,
-                height: 160,
+                width: 80,
+                height: 80,
               ),
               CommonImage(
                 network: imgUrl,
-                borderRadius: BorderRadius.circular(setRadius(40)),
+                borderRadius: BorderRadius.circular(setRadius(20)),
               ),
               CommonImage(
                 network: imgUrl,
@@ -53,15 +53,15 @@ class _ImagePageState extends BaseState<ImagePage> {
                 circle: true,
                 border: Border.all(
                   color: Colors.pink,
-                  width: setWidth(4),
+                  width: setWidth(2),
                 ),
               ),
 
               ///本地图片
               CommonImage(
                 asset: ImagePath.ic_police,
-                width: 400,
-                height: 400,
+                width: 200,
+                height: 200,
               ),
             ],
           ),

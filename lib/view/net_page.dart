@@ -38,7 +38,7 @@ class _NetPageState extends BaseState<NetPage> {
           CommonButton(
             'Get请求(全屏加载框)',
             radius: 20,
-            margin: only(right: 40, left: 40, top: 40),
+            margin: all(16),
             onPressed: () {
               _netBloc.get();
             },
@@ -46,7 +46,7 @@ class _NetPageState extends BaseState<NetPage> {
           CommonButton(
             'Post请求(局部加载框)',
             radius: 20,
-            margin: only(right: 40, left: 40, top: 40),
+            margin: all(16),
             onPressed: () {
               _netBloc.post();
             },

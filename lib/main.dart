@@ -7,20 +7,16 @@ import 'package:todo_flutter/common/route/module_route_name.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
+  ModuleRoute().initRoute();
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  MyApp() {
-    //初始化路由
-    ModuleRoute().initRoute();
-  }
-
   @override
   Widget build(BuildContext context) {
     //屏幕适配
     return ScreenUtilInit(
-      designSize: Size(750, 1334),
+      designSize: Size(375, 667),
       builder: () {
         return TodoLib(
           child: MaterialApp(
@@ -69,14 +65,14 @@ class _MyHomePageState extends BaseState<MyHomePage> {
         title: Text('TODO-Flutter'),
       ),
       body: Padding(
-        padding: symmetric(32, 32),
+        padding: symmetric(16, 16),
         child: ListView.builder(
           itemCount: routes.length,
           itemBuilder: (context, index) {
             return CommonButton(
               routes[index].first,
-              margin: only(bottom: 20),
-              radius: 20,
+              margin: only(bottom: 10),
+              radius: 10,
               onPressed: () {
                 RouterUtil.instance.navigate(routes[index].last);
               },

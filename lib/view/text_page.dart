@@ -26,7 +26,7 @@ class _TextPageState extends BaseState<TextPage> {
       appBar: AppBar(title: Text('文本示例')),
       body: SingleChildScrollView(
         child: Padding(
-          padding: all(32),
+          padding: all(16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -35,48 +35,48 @@ class _TextPageState extends BaseState<TextPage> {
               CommonText(
                 '我是蓝色文本呀',
                 color: Colors.blue,
-                fontSize: 30,
+                fontSize: 15,
               ),
               sizedBox(height: 10),
               CommonText(
                 '我是单行文本呀' * 10,
                 color: Colors.pink,
                 maxLines: 1,
-                fontSize: 32,
+                fontSize: 16,
               ),
               sizedBox(height: 10),
               CommonText(
                 '我是有下划线文本呀',
                 color: Colors.cyanAccent,
-                fontSize: 34,
+                fontSize: 17,
                 decoration: TextDecoration.underline,
               ),
               sizedBox(height: 10),
               CommonText(
                 '我是有删除线文本呀',
                 color: Colors.redAccent,
-                fontSize: 36,
+                fontSize: 18,
                 decoration: TextDecoration.lineThrough,
               ),
               sizedBox(height: 10),
               CommonText(
                 '我是W700文本呀',
                 color: Colors.blueGrey,
-                fontSize: 38,
+                fontSize: 19,
                 fontWeight: FontWeight.w700,
               ),
               sizedBox(height: 10),
               CommonText(
                 '我是斜体文本呀',
                 color: Colors.blueGrey,
-                fontSize: 40,
+                fontSize: 20,
                 fontStyle: FontStyle.italic,
               ),
               sizedBox(height: 10),
               CommonText(
                 '我是虚线下划线文本呀',
                 color: Colors.purple,
-                fontSize: 42,
+                fontSize: 21,
                 decorationStyle: TextDecorationStyle.dashed,
                 decoration: TextDecoration.underline,
               ),
@@ -84,7 +84,7 @@ class _TextPageState extends BaseState<TextPage> {
               CommonText(
                 '我是有2倍字间距文本呀' * 2,
                 color: Colors.indigo,
-                fontSize: 44,
+                fontSize: 22,
                 letterSpacing: 2,
               ),
               sizedBox(height: 10),
@@ -92,7 +92,7 @@ class _TextPageState extends BaseState<TextPage> {
                 '我是最大三行文本呀' * 20,
                 color: Colors.green,
                 maxLines: 3,
-                fontSize: 46,
+                fontSize: 23,
                 overflow: TextOverflow.ellipsis,
               ),
             ],

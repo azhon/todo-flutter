@@ -16,15 +16,15 @@ class ApiConvert extends BaseConvert {
   BaseBean<T> convert<T>(Result result, BaseResultBean? resultBean) {
     if (result.statusCode == HttpStatus.ok) {
       /// 根据自身业务返回的数据结果进行解析
-      int errorCode = result.data['errorCode'];
-      String errorMsg = result.data['errorMsg'];
+      var body = result.data;
+      var data = body['data'];
 
       ///json转模型
-      resultBean?.fromJson(result.data);
+      resultBean?.fromJson(data);
       return BaseBean(
-          code: errorCode,
-          message: errorMsg,
-          data: resultBean == null ? null : resultBean as T);
+          code: body['errorCode'],
+          message: body['errorMsg'],
+          data: resultBean == null ? data : resultBean as T);
     } else {
       ///网络请求 code != HttpStatus.ok
       return BaseBean(

@@ -36,27 +36,27 @@ class _InputPageState extends BaseState<InputPage> {
       appBar: AppBar(title: Text('输入框示例')),
       body: SingleChildScrollView(
         child: Padding(
-          padding: all(32),
+          padding: all(16),
           child: Column(
             children: [
               CommonInput(
                 placeholder: '自动获取焦点',
                 autofocus: true,
               ),
-              sizedBox(height: 20),
+              sizedBox(height: 10),
               CommonInput(
                 placeholder: '监听输入的内容',
                 onTextChange: (text) {
                   LogUtil.d('输入框监听：$text');
                 },
               ),
-              sizedBox(height: 20),
+              sizedBox(height: 10),
               CommonInput(
                 text: '初始输入内容',
                 placeholder: '初始输入内容',
                 autofocus: true,
               ),
-              sizedBox(height: 20),
+              sizedBox(height: 10),
               CommonInput(
                 key: _key,
                 placeholder: '前后加组件',
@@ -66,11 +66,11 @@ class _InputPageState extends BaseState<InputPage> {
                   LogUtil.d('点击键盘完成：$text');
                 },
                 prefix: Padding(
-                  padding: symmetric(0, 8),
+                  padding: symmetric(0, 4),
                   child: CommonImage(
                     asset: ImagePath.ic_search,
-                    width: 36,
-                    height: 36,
+                    width: 18,
+                    height: 18,
                   ),
                 ),
                 suffix: CommonClickWidget(
@@ -79,48 +79,49 @@ class _InputPageState extends BaseState<InputPage> {
                   },
                   child: CommonImage(
                     asset: ImagePath.ic_clear,
-                    width: 36,
-                    height: 36,
+                    width: 18,
+                    height: 18,
                   ),
                 ),
               ),
-              sizedBox(height: 20),
+              sizedBox(height: 10),
               CommonInput(
                 placeholder: '最多输入10个字',
                 maxLength: 10,
               ),
-              sizedBox(height: 20),
+              sizedBox(height: 10),
               CommonInput(
                 placeholder: '手机号码输入框',
                 maxLength: 11,
                 keyboardType: TextInputType.number,
                 inputFormatters: [FilteringTextInputFormatter.digitsOnly],
               ),
-              sizedBox(height: 20),
+              sizedBox(height: 10),
               CommonInput(
                 placeholder: '密码输入框，*显示',
                 maxLines: 1,
                 obscureText: true,
                 obscuringCharacter: '*',
               ),
-              sizedBox(height: 20),
+              sizedBox(height: 10),
               CommonInput(
                 key: _psdKey,
                 placeholder: '密码输入框',
                 maxLines: 1,
                 obscureText: true,
-                suffix: CommonClickWidget(
-                  onTap: () {
-                    _psdKey.currentState?.changeObscureText();
-                  },
+                suffix: Listener(
+                  onPointerDown: (detail) =>
+                      _psdKey.currentState?.changeObscureText(false),
+                  onPointerUp: (de) =>
+                      _psdKey.currentState?.changeObscureText(true),
                   child: CommonImage(
                     asset: ImagePath.ic_eye,
-                    width: 36,
-                    height: 36,
+                    width: 18,
+                    height: 18,
                   ),
                 ),
               ),
-              sizedBox(height: 20),
+              sizedBox(height: 10),
               CommonInput(
                 placeholder: '边框输入框',
                 decoration: BoxDecoration(
@@ -128,9 +129,9 @@ class _InputPageState extends BaseState<InputPage> {
                   border:
                       Border.all(color: Color(0xFFECEEF2), width: setWidth(2)),
                 ),
-                padding: symmetric(20, 16),
+                padding: symmetric(10, 8),
               ),
-              sizedBox(height: 20),
+              sizedBox(height: 10),
               CommonInputArea(
                 maxLength: 20,
               ),
