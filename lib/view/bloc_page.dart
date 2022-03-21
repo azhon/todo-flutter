@@ -25,7 +25,7 @@ class _BlocPageState extends BaseState<BlocPage> {
   @override
   void initState() {
     super.initState();
-    addBloc(TestBloc());
+    addBloc(TestBloc()..setState(this));
   }
 
   @override
@@ -44,8 +44,21 @@ class _BlocPageState extends BaseState<BlocPage> {
             ),
             CommonButton(
               'Bloc获取数据',
+              margin: only(top: 16, bottom: 16),
               radius: 20,
               onPressed: () => _bloc.init(),
+            ),
+            DataChangeWidget<int>(
+              bloc: _bloc.dataChangeBloc,
+              child: (context, state) {
+                return CommonText('简单Bloc：$state');
+              },
+            ),
+            CommonButton(
+              '简单Bloc获取数据',
+              margin: only(top: 16),
+              radius: 20,
+              onPressed: () => _bloc.changeData(),
             ),
           ],
         ),

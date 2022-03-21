@@ -17,8 +17,11 @@ abstract class TestEvent extends BaseEvent<TestBloc, TestState> {}
 
 class InitEvent extends TestEvent {
   @override
-  Future<TestState> on(TestBloc bloc, TestState currentState) {
+  Future<TestState> on(TestBloc bloc, TestState currentState) async {
+    bloc.showPageLoading();
     var result = Random().nextInt(9999).toString();
+    await Future.delayed(Duration(milliseconds: 1500));
+    bloc.dismissPageLoading();
     return Future.value(TestInitialState(result));
   }
 }
