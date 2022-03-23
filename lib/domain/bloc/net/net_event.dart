@@ -8,10 +8,10 @@
  * @author   阿钟
  */
 import 'package:flutter_basic_lib/flutter_basic_lib.dart';
-import 'package:todo_flutter/domain/bean/get_bean.dart';
 import 'package:todo_flutter/domain/bloc/net/net_bloc.dart';
 import 'package:todo_flutter/domain/bloc/net/net_state.dart';
-import 'package:todo_flutter/domain/repository/net_request.dart';
+import 'package:todo_flutter/domain/request/model/get_model.dart';
+import 'package:todo_flutter/domain/request/net_request.dart';
 
 abstract class NetEvent extends BaseEvent<NetBloc, NetState> {}
 
@@ -34,6 +34,6 @@ class PostEvent extends NetEvent {
     var bean = await NetPostRequest().request();
     await Future.delayed(Duration(seconds: 1));
     bloc.loadError(bean);
-    return NetInitialState(GetBean());
+    return NetInitialState(GetModel());
   }
 }

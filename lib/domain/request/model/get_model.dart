@@ -4,10 +4,10 @@ import 'package:flutter_basic_lib/flutter_basic_lib.dart';
 /// errorCode : 0
 /// errorMsg : ""
 
-class GetBean extends BaseResultBean {
+class GetModel extends BaseResultBean {
   List<Data>? data;
 
-  GetBean({this.data});
+  GetModel({this.data});
 
   @override
   fromJson(json) {

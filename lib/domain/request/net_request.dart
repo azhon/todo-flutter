@@ -9,11 +9,10 @@
  */
 
 import 'package:flutter_basic_lib/flutter_basic_lib.dart';
-import 'package:flutter_basic_lib/net/base_request.dart';
 import 'package:todo_flutter/common/api/api_provider.dart';
-import 'package:todo_flutter/domain/bean/get_bean.dart';
+import 'package:todo_flutter/domain/request/model/get_model.dart';
 
-class NetGetRequest extends ApiRequest<GetBean> {
+class NetGetRequest extends ApiRequest<GetModel> {
   NetGetRequest() : super({'id': '323', 'name': 'azhon'});
 
   @override
@@ -23,7 +22,7 @@ class NetGetRequest extends ApiRequest<GetBean> {
   String get url => 'banner/json';
 
   @override
-  BaseResultBean get resultInstance => GetBean();
+  BaseResultBean get resultInstance => GetModel();
 }
 
 class NetPostRequest extends ApiRequest {

@@ -7,14 +7,15 @@
  *
  * @author   阿钟
  */
-import 'package:todo_flutter/domain/bean/get_bean.dart';
+
+import 'package:todo_flutter/domain/request/model/get_model.dart';
 
 abstract class NetState {
-  final GetBean? data;
+  final GetModel? data;
 
   NetState(this.data);
 }
 
 class NetInitialState extends NetState {
-  NetInitialState(GetBean? data) : super(data);
+  NetInitialState(GetModel? data) : super(data);
 }
