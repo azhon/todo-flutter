@@ -21,31 +21,31 @@ class ModuleRoute {
   ///添加模块路由
   void initRoute() {
     RouterUtil.instance.addRoute(ModuleRouteName.TextPage,
-        (Map<String, dynamic> map, dynamic obj) {
+        (Map<String, dynamic> map) {
       return TextPage();
     });
     RouterUtil.instance.addRoute(ModuleRouteName.ButtonPage,
-        (Map<String, dynamic> map, dynamic obj) {
+        (Map<String, dynamic> map) {
       return ButtonPage();
     });
     RouterUtil.instance.addRoute(ModuleRouteName.ImagePage,
-        (Map<String, dynamic> map, dynamic obj) {
+        (Map<String, dynamic> map) {
       return ImagePage();
     });
     RouterUtil.instance.addRoute(ModuleRouteName.ToastPage,
-        (Map<String, dynamic> map, dynamic obj) {
+        (Map<String, dynamic> map) {
       return ToastPage();
     });
     RouterUtil.instance.addRoute(ModuleRouteName.InputPage,
-        (Map<String, dynamic> map, dynamic obj) {
+        (Map<String, dynamic> map) {
       return InputPage();
     });
     RouterUtil.instance.addRoute(ModuleRouteName.BlocPage,
-        (Map<String, dynamic> map, dynamic obj) {
+        (Map<String, dynamic> map) {
       return BlocPage();
     });
     RouterUtil.instance.addRoute(ModuleRouteName.NetPage,
-        (Map<String, dynamic> map, dynamic obj) {
+        (Map<String, dynamic> map) {
       return NetPage();
     });
   }

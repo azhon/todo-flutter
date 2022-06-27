@@ -74,7 +74,12 @@ class _MyHomePageState extends BaseState<MyHomePage> {
               margin: only(bottom: 10),
               radius: 10,
               onPressed: () {
-                RouterUtil.instance.navigate(routes[index].last);
+                RouterUtil.instance
+                    .build(routes[index].last)
+                    .withString('key-s', '')
+                    .withBool('key-b', false)
+                    .withNum('key-n', 3)
+                    .navigate();
               },
             );
           },
