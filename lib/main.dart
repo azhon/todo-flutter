@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
     //屏幕适配
     return ScreenUtilInit(
       designSize: Size(375, 667),
-      builder: () {
+      builder: (_, child) {
         return TodoLib(
           child: MaterialApp(
             title: 'TODO-Flutter',
