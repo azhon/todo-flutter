@@ -1,12 +1,7 @@
-/*
- * 项目名:    todo_flutter
- * 包名       
- * 文件名:    api_convert
- * 创建时间:  2021/10/15 on 14:31
- * 描述:     
- *
- * @author   阿钟
- */
+/// createTime:  2021/10/15 on 14:31
+/// desc:
+///
+/// @author   azhon
 import 'dart:io';
 
 import 'package:flutter_basic_lib/flutter_basic_lib.dart';
@@ -20,7 +15,11 @@ class ApiConvert extends BaseConvert {
       var data = body['data'];
 
       ///json转模型
-      resultBean?.fromJson(data);
+      if (resultBean is BaseListResultBean) {
+        _handlerListJson(data, resultBean);
+      } else {
+        resultBean?.fromJson(data);
+      }
       return BaseBean(
           code: body['errorCode'],
           message: body['errorMsg'],
@@ -31,5 +30,13 @@ class ApiConvert extends BaseConvert {
           code: result.statusCode ?? BaseBean.DEFAULT_CODE,
           message: result.statusMessage);
     }
+  }
+
+  ///处理列表json数据
+  _handlerListJson(dynamic data, BaseListResultBean resultBean) {
+    resultBean.curPage = data['curPage'];
+    resultBean.total = data['total'];
+    resultBean.totalPage = data['pageCount'];
+    resultBean.fromJson(data['datas']);
   }
 }

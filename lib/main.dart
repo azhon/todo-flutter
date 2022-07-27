@@ -4,10 +4,8 @@ import 'package:todo_flutter/common/route/module_route.dart';
 import 'package:todo_flutter/common/route/module_route_name.dart';
 
 void main() {
+  runApp(TodoApp(home: MyHomePage()));
   ModuleRoute().initRoute();
-  runApp(
-    TodoApp(home: MyHomePage()),
-  );
 }
 
 class MyHomePage extends StatefulWidget {
@@ -24,6 +22,7 @@ class _MyHomePageState extends BaseState<MyHomePage> {
     ['输入框示例', ModuleRouteName.InputPage],
     ['Bloc示例', ModuleRouteName.BlocPage],
     ['网络示例', ModuleRouteName.NetPage],
+    ['下拉刷新示例', ModuleRouteName.RefreshPage],
   ];
 
   @override

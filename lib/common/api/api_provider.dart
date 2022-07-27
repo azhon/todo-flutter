@@ -1,12 +1,7 @@
-/*
- * 项目名:    todo_flutter
- * 包名       
- * 文件名:    api_provider
- * 创建时间:  2021/10/15 on 10:29
- * 描述:      单例对象，保证所有请求使用一份数据
- *
- * @author   阿钟
- */
+/// createTime: 2021/10/15 on 10:29
+/// desc: 单例对象，保证所有请求使用一份数据
+///
+/// @author azhon
 import 'package:flutter_basic_lib/flutter_basic_lib.dart';
 import 'package:flutter_basic_lib/net/base_convert.dart';
 import 'package:flutter_basic_lib/net/base_net_engine.dart';

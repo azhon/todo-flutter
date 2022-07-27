@@ -14,6 +14,7 @@ import 'package:todo_flutter/view/button_page.dart';
 import 'package:todo_flutter/view/image_page.dart';
 import 'package:todo_flutter/view/input_page.dart';
 import 'package:todo_flutter/view/net_page.dart';
+import 'package:todo_flutter/view/refresh_page.dart';
 import 'package:todo_flutter/view/text_page.dart';
 import 'package:todo_flutter/view/toast_page.dart';
 
@@ -47,6 +48,10 @@ class ModuleRoute {
     RouterUtil.instance.addRoute(ModuleRouteName.NetPage,
         (Map<String, dynamic> map) {
       return NetPage();
+    });
+    RouterUtil.instance.addRoute(ModuleRouteName.RefreshPage,
+        (Map<String, dynamic> map) {
+      return RefreshPage();
     });
   }
 }
