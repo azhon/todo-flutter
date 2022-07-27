@@ -22,14 +22,16 @@ class ApiConvert extends BaseConvert {
         resultBean?.fromJson(data);
       }
       return BaseBean(
-          code: body['errorCode'],
-          message: body['errorMsg'],
-          data: resultBean == null ? data : resultBean as T);
+        code: body['errorCode'],
+        message: body['errorMsg'],
+        data: resultBean == null ? data : resultBean as T,
+      );
     } else {
       ///网络请求 code != HttpStatus.ok
       return BaseBean(
-          code: result.statusCode ?? BaseBean.DEFAULT_CODE,
-          message: result.statusMessage);
+        code: result.statusCode ?? BaseBean.DEFAULT_CODE,
+        message: result.statusMessage,
+      );
     }
   }
 
