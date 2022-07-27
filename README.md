@@ -18,8 +18,6 @@
 │       ├── module_route_name.dart
 │       └── route.sh
 ├── domain
-│   ├── bean
-│   │   └── get_bean.dart
 │   ├── bloc
 │   │   ├── bloc
 │   │   │   ├── test_bloc.dart
@@ -29,7 +27,11 @@
 │   │       ├── net_bloc.dart
 │   │       ├── net_event.dart
 │   │       └── net_state.dart
-│   └── repository
+│   └── request
+│       ├── list_request.dart
+│       ├── model
+│       │   ├── get_model.dart
+│       │   └── list_data_model.dart
 │       └── net_request.dart
 ├── main.dart
 ├── util
@@ -40,5 +42,7 @@
     ├── image_page.dart
     ├── input_page.dart
     ├── net_page.dart
-    └── text_page.dart
+    ├── refresh_page.dart
+    ├── text_page.dart
+    └── toast_page.dart
 ```
