@@ -1,16 +1,9 @@
-/*
- * 项目名:    todo_flutter
- * 包名       
- * 文件名:    button_page
- * 创建时间:  2021/9/17 on 18:14
- * 描述:     TODO
- *
- * @author   阿钟
- */
+/// createTime: 2021/9/17 on 18:14
+/// desc:
+///
+/// @author azhon
 import 'package:flutter/material.dart';
-import 'package:flutter_basic_lib/base/base_stateful_widget.dart';
 import 'package:flutter_basic_lib/flutter_basic_lib.dart';
-import 'package:flutter_basic_lib/ui/common_button.dart';
 
 class ButtonPage extends BaseStatefulWidget {
   ButtonPage({Key? key}) : super(key: key);

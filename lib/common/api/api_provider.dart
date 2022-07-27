@@ -2,11 +2,8 @@
 /// desc: 单例对象，保证所有请求使用一份数据
 ///
 /// @author azhon
+
 import 'package:flutter_basic_lib/flutter_basic_lib.dart';
-import 'package:flutter_basic_lib/net/base_convert.dart';
-import 'package:flutter_basic_lib/net/base_net_engine.dart';
-import 'package:flutter_basic_lib/net/base_net_provider.dart';
-import 'package:flutter_basic_lib/net/dio_engine.dart';
 import 'package:todo_flutter/common/api/api_convert.dart';
 
 class ApiProvider extends BaseNetProvider {

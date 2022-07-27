@@ -1,22 +1,11 @@
-/*
- * 项目名:    todo_flutter
- * 包名       
- * 文件名:    input_page
- * 创建时间:  2021/9/27 on 17:19
- * 描述:     TODO
- *
- * @author   阿钟
- */
+/// createTime: 2021/9/27 on 17:59
+/// desc:
+///
+/// @author azhon
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_basic_lib/base/base_state.dart';
-import 'package:flutter_basic_lib/base/base_stateful_widget.dart';
 import 'package:flutter_basic_lib/flutter_basic_lib.dart';
-import 'package:flutter_basic_lib/ui/common_image.dart';
-import 'package:flutter_basic_lib/ui/common_input.dart';
-import 'package:flutter_basic_lib/ui/common_input_area.dart';
-import 'package:flutter_basic_lib/ui/widget/common_click_widget.dart';
 import 'package:todo_flutter/util/image_path.dart';
 
 class InputPage extends BaseStatefulWidget {

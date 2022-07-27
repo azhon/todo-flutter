@@ -1,12 +1,8 @@
-/*
- * 项目名:    todo_flutter
- * 包名       
- * 文件名:    test_bloc
- * 创建时间:  2021/9/29 on 17:10
- * 描述:     TODO
- *
- * @author   阿钟
- */
+/// createTime: 2021/9/29 on 17:10
+/// desc:
+///
+/// @author azhon
+
 import 'dart:math';
 
 import 'package:flutter_basic_lib/bloc/data/data_change_bloc.dart';

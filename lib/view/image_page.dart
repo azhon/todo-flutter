@@ -1,12 +1,7 @@
-/*
- * 项目名:    todo_flutter
- * 包名       
- * 文件名:    image_page
- * 创建时间:  2021/9/22 on 17:19
- * 描述:     TODO
- *
- * @author   阿钟
- */
+/// createTime: 2021/9/22 on 17:19
+/// desc:
+///
+/// @author azhon
 import 'package:flutter/material.dart';
 import 'package:flutter_basic_lib/base/base_state.dart';
 import 'package:flutter_basic_lib/base/base_stateful_widget.dart';

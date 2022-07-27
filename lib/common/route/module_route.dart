@@ -1,12 +1,8 @@
-/*
- * 项目名:    todo_flutter
- * 包名       
- * 文件名:    module_route
- * 创建时间:  2021/9/17 on 18:12
- * 描述:     TODO
- *
- * @author   阿钟
- */
+/// createTime: 2021/9/17 on 18:12
+/// desc:
+///
+/// @author azhon
+
 import 'package:flutter_basic_lib/route/router_util.dart';
 import 'package:todo_flutter/common/route/module_route_name.dart';
 import 'package:todo_flutter/view/bloc_page.dart';

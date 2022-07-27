@@ -1,14 +1,8 @@
-/*
- * 项目名:    todo_flutter
- * 包名       
- * 文件名:    net_page
- * 创建时间:  2021/10/14 on 11:15
- * 描述:     TODO
- *
- * @author   阿钟
- */
+/// createTime: 2021/10/14 on 11:15
+/// desc:
+///
+/// @author azhon
 import 'package:flutter/material.dart';
-import 'package:flutter_basic_lib/base/base_state.dart';
 import 'package:flutter_basic_lib/flutter_basic_lib.dart';
 import 'package:todo_flutter/domain/bloc/net/net_bloc.dart';
 import 'package:todo_flutter/domain/bloc/net/net_state.dart';
