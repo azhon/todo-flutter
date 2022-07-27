@@ -34,8 +34,17 @@ class _RefreshPageState extends BaseState<RefreshPage> {
           print('${list.length}');
           return ListView.builder(
             itemCount: list.length,
+            padding: all(16),
             itemBuilder: (_, index) {
-              return SizedBox();
+              return Card(
+                child: ListTile(
+                  title: CommonText(list[index].title ?? ''),
+                  subtitle: Align(
+                    alignment: Alignment.centerRight,
+                    child: CommonText(list[index].niceDate ?? ''),
+                  ),
+                ),
+              );
             },
           );
         },

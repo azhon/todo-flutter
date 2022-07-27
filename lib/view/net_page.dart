@@ -45,13 +45,16 @@ class _NetPageState extends BaseState<NetPage> {
               _netBloc.post();
             },
           ),
-          BlocLoadWidget(
-            loadBloc: _netBloc.loadBloc,
-            child: BlocBuilder<NetBloc, NetState>(
-              bloc: _netBloc,
-              builder: (_, state) {
-                return CommonText(state.data?.toJson().toString() ?? '');
-              },
+          SizedBox(
+            height: setWidth(300),
+            child: BlocLoadWidget(
+              loadBloc: _netBloc.loadBloc,
+              child: BlocBuilder<NetBloc, NetState>(
+                bloc: _netBloc,
+                builder: (_, state) {
+                  return CommonText(state.data?.toJson().toString() ?? '');
+                },
+              ),
             ),
           ),
         ],
