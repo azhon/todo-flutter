@@ -6,6 +6,7 @@
  static const InputPage = "/InputPage";
  static const NetPage = "/NetPage";
  static const RefreshPage = "/RefreshPage";
+ static const SliverPage = "/SliverPage";
  static const TextPage = "/TextPage";
  static const ToastPage = "/ToastPage";
 }

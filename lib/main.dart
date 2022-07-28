@@ -23,6 +23,7 @@ class _MyHomePageState extends BaseState<MyHomePage> {
     ['Bloc示例', ModuleRouteName.BlocPage],
     ['网络示例', ModuleRouteName.NetPage],
     ['下拉刷新示例', ModuleRouteName.RefreshPage],
+    ['Sliver示例', ModuleRouteName.SliverPage],
   ];
 
   @override

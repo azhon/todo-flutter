@@ -11,6 +11,7 @@ import 'package:todo_flutter/view/image_page.dart';
 import 'package:todo_flutter/view/input_page.dart';
 import 'package:todo_flutter/view/net_page.dart';
 import 'package:todo_flutter/view/refresh_page.dart';
+import 'package:todo_flutter/view/sliver_page.dart';
 import 'package:todo_flutter/view/text_page.dart';
 import 'package:todo_flutter/view/toast_page.dart';
 
@@ -48,6 +49,10 @@ class ModuleRoute {
     RouterUtil.instance.addRoute(ModuleRouteName.RefreshPage,
         (Map<String, dynamic> map) {
       return RefreshPage();
+    });
+    RouterUtil.instance.addRoute(ModuleRouteName.SliverPage,
+        (Map<String, dynamic> map) {
+      return SliverPage();
     });
   }
 }
