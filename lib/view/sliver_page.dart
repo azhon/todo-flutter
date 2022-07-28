@@ -35,8 +35,10 @@ class _SliverPageState extends BaseState<SliverPage>
               expandedHeight: setWidth(250),
               flexibleSpace: FlexibleSpaceBar(
                 title: Text('Sliver示例'),
-                background: Image.network(
-                  'https://cdn-usa.skypixel.com/uploads/usa_files/photo/image/367e939b-a88b-4891-983d-10edb4e72cf0.5766795@!1920',
+                titlePadding: only(bottom: 16, left: 60),
+                background: CommonImage(
+                  network:
+                      'https://cdn-usa.skypixel.com/uploads/usa_files/photo/image/367e939b-a88b-4891-983d-10edb4e72cf0.5766795@!1920',
                   fit: BoxFit.cover,
                 ),
               ),
